@@ -1,0 +1,38 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.form-container{
+    background-color: beige;
+}
+.form-header{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: grid;
+    grid-template-rows: auto auto 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3%;
+}
+.contact-form input{
+    width: 100%;
+    text-align: center;
+}
+.submit{
+    grid-column: span 2;
+}
+.submit input {
+    width: 50%;
+}
+
