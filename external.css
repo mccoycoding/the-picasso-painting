@@ -2,14 +2,53 @@ html, body{
     height: 100%;
     width: 100%;
     margin: 0;
+    background-color: rgb(162, 162, 212);
 }
+/*Reactive Elements*/
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    label, .info input, p{
+        font-size: .75em;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    label, .info input, p{
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1680) {
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    label, .info input, p{
+        font-size: 1.25em;
+    }
+}
+/*Form CSS*/
 .form-container{
     background-color: beige;
+    z-index: 100;
 }
-.form-header{
+.header{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 form{
     display: grid;
     grid-template-rows: auto auto 100%;
@@ -34,5 +73,41 @@ form{
 }
 .submit input {
     width: 50%;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+/*Artwork CSS*/
+.art-container, .photo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo-container{
+    position: relative;
+    background-color: rgb(69, 109, 155);
+    border: gold 2px solid;
+    width: 45%;
+    padding: 5% 0;
+    margin: 2%;
+    border-radius: 5%;
+}
+img{
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px 10px #141414;
+    width: 75%;
+}
+.caption{
+    position: absolute;
+    bottom: 10%;
+    background-color: black;
+    color: white;
+    padding: 1% 1% 1% 1%;
+}
+
+.last{
+    padding-bottom: 5%;
 }
 
