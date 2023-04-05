@@ -43,7 +43,7 @@ html, body{
     background-color: beige;
     z-index: 100;
 }
-.header{
+.headers{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,4 +110,8 @@ img{
 .last{
     padding-bottom: 5%;
 }
-
+/*Header CSS*/
+header{
+    background-color: rgb(160, 107, 160);
+    border-bottom: 2px solid gold;
+}
